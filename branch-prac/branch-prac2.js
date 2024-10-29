@@ -1,3 +1,5 @@
+"use strict";
+
 let a = parseInt(window.prompt('目的地の駅を入力してください。\n1:A駅\n2:B駅\n3:C駅'))
 if (a === 1){
     window.alert('快速電車が停まります。');

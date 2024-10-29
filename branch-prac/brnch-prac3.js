@@ -1,3 +1,5 @@
+"use strict";
+
 let random = Math.floor(Math.random() * 5)
 if(random === 0){
     window.alert(`あなたの数値は${random}でした。大吉です！`);

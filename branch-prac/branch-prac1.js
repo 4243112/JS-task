@@ -1,3 +1,5 @@
+"use strict";
+
 let a = (window.prompt('ユーザーが身長を入力するダイアログ>>'));
 if (!a || !a.match(/\S/g)) {
     window.alert('入力がないと判定ができません。');
