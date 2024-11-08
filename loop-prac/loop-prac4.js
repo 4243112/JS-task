@@ -16,8 +16,11 @@ while (a >= 0) {
         d = d + b;
         a = a - b;
     }
-
+    if (a < 0){
+        break;
+    }
     console.log(`現在${d}マス進んでいます。あと${a}マスでゴールです！`);
+    
 }
 
 console.log('ゴールしました！');

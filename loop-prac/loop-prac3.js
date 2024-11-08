@@ -7,7 +7,7 @@ let c = 0;
 
 
 while(a >= 0) {
-    b = Math.floor(Math.random() * 31);
+    b = Math.floor(Math.random() * (30 + 1 - 1) + 1);
     a = a - b;
     console.log(`モンスターに${b}のダメージ!`);
     c = c + 1;
