@@ -1,12 +1,12 @@
 "use strict";
 
-function f(num){
-    if (num === 0 || num === 1){
+function f(a){
+    if (a === 0 || a === 1){
         return 1;
     }
-    return num * f(num -1);
+    return a * f(a -1);
 }
 
-let random = Math.floor(Math.random() * (20-3+1)+3);
-let sum = f(random);
-console.log(`1～${random}までの階階乗：${sum}`);
+let num = Math.floor(Math.random() * (20-3+1)+3);
+let sum = f(num);
+console.log(`1～${num}までの階乗：${sum}`);

@@ -1,14 +1,14 @@
 "use strict";
 
-function f(num){
-    if (num === 0){
+function f(a){
+    if (a === 0){
         return 0;
     }
-    return num + f(num -1);
+    return num + f(a -1);
 }
 
-let random = Math.floor(Math.random() * (10-3+1)+3);
-let sum = f(random);
-console.log(`1～${random}までの総和：${sum}`);
+let num = Math.floor(Math.random() * (10-3+1)+3);
+let sum = f(num);
+console.log(`1～${num}までの総和：${sum}`);
 
 
