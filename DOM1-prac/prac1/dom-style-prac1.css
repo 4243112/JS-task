@@ -1,0 +1,27 @@
+.style1 {
+    font-size: 20px;
+    color: red;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.style2 {
+    font-size: 25px;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.style3 {
+    font-size: 30px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+
+.style4 {
+    font-size: 15px;
+    color: purple;
+    font-family: 'Verdana', Geneva, sans-serif;
+    letter-spacing: 4px;
+}
