@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account</title>
+</head>
+<body>
+    <h1>Bank Account</h1>
+
+    <button onclick="deposit()">預金</button>
+    <button onclick="withdraw()">引き出し</button>
+    <button onclick="checkBalance()">残高確認</button>
+
+    <script>
+        // BankAccountクラスの定義
+        class BankAccount {
+            constructor(name) {
+                this.name = name;
+                this.balance = 0;
+            }
+
+            // 預金メソッド
+            deposit(amount) {
+                this.balance += amount;
+                console.log(`${amount}円預金しました。現在の残高は${this.balance}円です。`);
+            }
+
+            // 引き出しメソッド
+            withdraw(amount) {
+                if (amount > this.balance) {
+                    console.error('エラー：残高不足です。');
+                } else {
+                    this.balance -= amount;
+                    console.log(`${amount}円引き出しました。現在の残高は${this.balance}円です。`);
+                }
+            }
+
+            // 残高確認メソッド
+            checkBalance() {
+                console.log(`現在の残高は${this.balance}円です。`);
+            }
+        }
+
+        // インスタンスの作成
+        const account = new BankAccount('山田太郎');
+
+        // 預金処理
+        function deposit() {
+            const amount = parseInt(prompt('預金額を入力してください:', '0'));
+            if (!isNaN(amount) && amount > 0) {
+                account.deposit(amount);
+            } else {
+                console.error('有効な金額を入力してください。');
+            }
+        }
+
+        // 引き出し処理
+        function withdraw() {
+            const amount = parseInt(prompt('引き出し額を入力してください:', '0'));
+            if (!isNaN(amount) && amount > 0) {
+                account.withdraw(amount);
+            } else {
+                console.error('有効な金額を入力してください。');
+            }
+        }
+
+        // 残高確認
+        function checkBalance() {
+            account.checkBalance();
+        }
+    </script>
+</body>
+</html>
