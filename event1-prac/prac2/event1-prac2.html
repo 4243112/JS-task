@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品の合計価格計算</title>
+</head>
+<body>
+    <h1>商品の合計価格計算</h1>
+    <table>
+        <tr>
+            <th>商品名</th>
+            <th>価格</th>
+            <th>個数</th>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td class="price" data-price="32978">32,978円</td>
+            <td>
+                <select class="quantity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>PS5</td>
+            <td class="price" data-price="72980">72,980円</td>
+            <td>
+                <select class="quantity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <h2>合計: <span id="total">0</span>円</h2>
+    <script type="text/javascript" src="event1-prac2.js"></script>
+</body>
+</html>
