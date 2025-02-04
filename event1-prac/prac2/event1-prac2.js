@@ -10,13 +10,17 @@ function updateTotal() {
     document.querySelectorAll('tr').forEach(row => {
         const priceElement = row.querySelector('.price');
         const quantityElement = row.querySelector('.quantity');
-        
-        if (priceElement && quantityElement) {
+        const itemTotalElement = row.querySelector('.item-total'); // Add this line
+
+        if (priceElement && quantityElement && itemTotalElement) { // Add itemTotalElement check
             const price = parseInt(priceElement.getAttribute('data-price'));
             const quantity = parseInt(quantityElement.value);
-            total += price * quantity;
+            const itemTotal = price * quantity;
+            total += itemTotal;
+
+            itemTotalElement.innerText = `${itemTotal}円`; // Set item total
         }
     });
 
-    document.getElementById('total').innerText = total;
+    document.getElementById('total').innerText = `${total}円`;
 }
