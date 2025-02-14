@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マウスイベントのデモ</title>
+    <style>
+        #outbox,
+        #inbox {
+            border: 1px solid black;
+            padding: 10px;
+            width: 50%;
+        }
+    
+        #outbox {
+            height: 200px;
+        }
+    
+        #inbox {
+            margin: 0 auto;
+        }
+    
+        .red {
+            color: red;
+            background: lightsalmon;
+        }
+    
+        .green {
+            background: greenyellow;
+        }
+    
+        .white {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="outbox" class="white">
+    
+        <div id="inbox" class="white">
+            カーソルが乗ったら色を変化
+        </div>
+    </div>
+    <script type="text/javascript" src="event2-prac4.js"></script>
+</body>
+</html>
